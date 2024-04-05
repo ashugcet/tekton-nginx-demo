@@ -3,6 +3,7 @@ FROM ubuntu
 
 # Install Nginx
 RUN apt-get -y update && apt-get -y install nginx
+RUN apt-get -y install curl
 
 # Copy the Nginx config
 COPY default /etc/nginx/sites-available/default
